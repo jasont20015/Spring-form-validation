@@ -3,24 +3,18 @@ package com.example.validatingforminput;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.validation.constraints.Pattern;
 
 public class Student {
 
     //INITIALISE VARIABLES
-    private final int id;
-    private final int PCN;
+    private Integer id;
+    private Integer PCN;
     private String firstName;
     private String lastName;
     private Specialisation specialisation;
 
-    //CONSTRUCTOR
-    public Student (final int id, final int PCN, String firstName, String lastName) {
-        this.id = id;
-        this.PCN = PCN;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.specialisation = Specialisation.SOFTWAREENGINEERING;
-    }
+
     //HELPER FUNCTIONS
     /**
      * This method is used to change specialisation from software engineering. If the user is currently software
@@ -50,7 +44,7 @@ public class Student {
 
     //GETTERS AND SETTERS
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -70,9 +64,13 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public int getPCN() {
+    public Integer getPCN() {
         return PCN;
     }
-
-
+	public void setPCN(Integer pcn) {
+		this.PCN = pcn;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
 }
