@@ -6,6 +6,7 @@ import javax.validation.constraints.Size;
 import javax.validation.constraints.Pattern;
 
 public class Student {
+    //TODO: add Spring annotations to variables we want to validate
 
     //INITIALISE VARIABLES
     private Integer id;

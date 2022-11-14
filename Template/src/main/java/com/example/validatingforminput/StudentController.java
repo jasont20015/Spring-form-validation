@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 public class StudentController implements WebMvcConfigurer {
-    //TODO: Add spring annotations
+    //TODO: Add spring annotations + Spring mapping annotations
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
